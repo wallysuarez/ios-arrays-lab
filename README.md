@@ -8,7 +8,7 @@ Create an array of strings called `colors` that contain "orange", "red", "yellow
 
 Then, using array subscripting and string interpolation, print out the String `"orange, yellow, and lavender are some of my favorite colors"`.
 
-```
+```swift
 let colors = ["orange", "red", "yellow", "turquoise", "lavender"]
 
 print("\(colors[0]), \(colors[2]), and \(colors[4]) are some of my favorite colors")
@@ -20,7 +20,7 @@ Remove "Illinois" and "Kansas" from the array below.
 
 `var westernStates = ["California", "Oregon", "Washington", "Idaho", "Illinois", "Kansas"]`
 
-```
+```swift
 var westernStates = ["California", "Oregon", "Washington", "Idaho", "Illinois", "Kansas"]
 
 print(westernStates.dropLast(2))
@@ -32,7 +32,7 @@ Iterate through the array below. For each state, print out the name of the state
 
 `let moreStates = ["Hawaii", "New Mexico", "Alaska", "Montana", "Texas", "New York", "Florida"]`
 
-```
+```swift
 for i in moreStates {
     if i == "Hawaii" || i == "Alaska" {
         print("\(i): is not in the continental US.")
@@ -48,7 +48,7 @@ Print out how many non-whitespace characters are in `myString`:
 
 `let myString = "This is good practice with Strings!"`
 
-```
+```swift
 for i in myString {
     if i != " " {
         print(i)
@@ -60,7 +60,8 @@ Iterate through the array below. For each sentence, print out how many non-white
 
 `let myFavoriteQuotes = ["To be or not to be, that is the question.", "The only source of knowledge is experience.", "Mr. Gorbachev, tear down this wall!", "Four score and twenty years ago..."]`
 
-```
+```swift
+
 
 ```
 ## Question 5
@@ -72,7 +73,8 @@ var garden = ["dirt","🌷","dirt","🌷","dirt","dirt","🌷","dirt","🌷","di
 var basket = [String]()
 ```
 
-```
+```swift
+
 
 ```
 
@@ -87,7 +89,8 @@ The below array represents an unfinished batting lineup for a baseball team. **Y
 
 `var battingLineup = ["Reyes", "Jeter", "Ramirez", "Pujols","Griffey","Thomas","Jones", "Rodriguez"]`
 
-```
+```swift
+
 
 ```
 
