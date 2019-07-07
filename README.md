@@ -34,11 +34,11 @@ Iterate through the array below. For each state, print out the name of the state
 
 ```swift
 for i in moreStates {
-    if i == "Hawaii" || i == "Alaska" {
-        print("\(i): is not in the continental US.")
-    } else {
-        print("\(i): is in the continental US.")
-    }
+if i == "Hawaii" || i == "Alaska" {
+print("\(i): is not in the continental US.")
+} else {
+print("\(i): is in the continental US.")
+}
 }
 ```
 
@@ -49,10 +49,13 @@ Print out how many non-whitespace characters are in `myString`:
 `let myString = "This is good practice with Strings!"`
 
 ```swift
-for i in myString {
-    if i != " " {
-        print(i)
-    }
+let stringCount = myString.count
+
+var space = " "
+var spaceCount = space.count
+
+for space in myString where space == " " {
+print(spaceCount)
 }
 ```
 
@@ -74,7 +77,12 @@ var basket = [String]()
 ```
 
 ```swift
-
+for (index,value) in garden.enumerated() where value == "🌷" {
+basket.append(value)
+garden[index] = "dirt"
+}
+print(basket)
+print(garden)
 
 ```
 
@@ -90,8 +98,12 @@ The below array represents an unfinished batting lineup for a baseball team. **Y
 `var battingLineup = ["Reyes", "Jeter", "Ramirez", "Pujols","Griffey","Thomas","Jones", "Rodriguez"]`
 
 ```swift
-
-
+battingLineup[1] = "Tejada"
+battingLineup[5] = "Guerrero"
+battingLineup.remove(at: 0)
+battingLineup.append("Reyes")
+battingLineup.append("Suzuki")
+print (battingLineup)
 ```
 
 ## Question 7
