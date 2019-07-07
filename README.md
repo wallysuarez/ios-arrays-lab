@@ -8,13 +8,23 @@ Create an array of strings called `colors` that contain "orange", "red", "yellow
 
 Then, using array subscripting and string interpolation, print out the String `"orange, yellow, and lavender are some of my favorite colors"`.
 
+```
+let colors = ["orange", "red", "yellow", "turquoise", "lavender"]
 
+print("\(colors[0]), \(colors[2]), and \(colors[4]) are some of my favorite colors")
+
+```
 ## Question 2
 
 Remove "Illinois" and "Kansas" from the array below.
 
 `var westernStates = ["California", "Oregon", "Washington", "Idaho", "Illinois", "Kansas"]`
 
+```
+var westernStates = ["California", "Oregon", "Washington", "Idaho", "Illinois", "Kansas"]
+
+print(westernStates.dropLast(2))
+```
 
 ## Question 3
 
@@ -22,6 +32,15 @@ Iterate through the array below. For each state, print out the name of the state
 
 `let moreStates = ["Hawaii", "New Mexico", "Alaska", "Montana", "Texas", "New York", "Florida"]`
 
+```
+for i in moreStates {
+    if i == "Hawaii" || i == "Alaska" {
+        print("\(i): is not in the continental US.")
+    } else {
+        print("\(i): is in the continental US.")
+    }
+}
+```
 
 ## Question 4
 
@@ -29,11 +48,21 @@ Print out how many non-whitespace characters are in `myString`:
 
 `let myString = "This is good practice with Strings!"`
 
+```
+for i in myString {
+    if i != " " {
+        print(i)
+    }
+}
+```
+
 Iterate through the array below. For each sentence, print out how many non-whitespace characters are in it.
 
 `let myFavoriteQuotes = ["To be or not to be, that is the question.", "The only source of knowledge is experience.", "Mr. Gorbachev, tear down this wall!", "Four score and twenty years ago..."]`
 
+```
 
+```
 ## Question 5
 
 Iterate through `garden` and place any 🌷 that you find into the `basket`. Replace any 🌷 that you pick up with `"dirt"`. Then print how many 🌷 are in your `basket`.
@@ -41,6 +70,10 @@ Iterate through `garden` and place any 🌷 that you find into the `basket`. Rep
 ```swift
 var garden = ["dirt","🌷","dirt","🌷","dirt","dirt","🌷","dirt","🌷","dirt"]
 var basket = [String]()
+```
+
+```
+
 ```
 
 ## Question 6
@@ -54,6 +87,9 @@ The below array represents an unfinished batting lineup for a baseball team. **Y
 
 `var battingLineup = ["Reyes", "Jeter", "Ramirez", "Pujols","Griffey","Thomas","Jones", "Rodriguez"]`
 
+```
+
+```
 
 ## Question 7
 
