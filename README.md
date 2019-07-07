@@ -119,6 +119,21 @@ var numbers: [Int]
 let target: Int = 32
 ```
 
+```swift
+var numbers: [Int]
+let target: Int = 32
+
+
+for i in numbers {
+if i == target {
+print("true")
+} else {
+print("false")
+}
+}
+```
+
+
 Ex.1
 
 ```swift
@@ -149,7 +164,15 @@ let arrayOfNumbers: [Int] = (1...100).map{ _ in Int.random(in: 0...200)}.map{Int
 
 //This creates an array of 100 numbers in between 0 and 200.  For now, you don't need to worry about how it does that.
 ```
+```swift
 
+var maxValue = 0
+
+for i in arrayOfNumbers where i > maxValue {
+maxValue = i
+}
+print(maxValue)
+```
 
 ## Question 9
 
@@ -160,7 +183,15 @@ let arrayOfNumbers: [Int] = (1...100).map{ _ in Int.random(in: 0...200)}.map{Int
 
 //This creates an array of 100 numbers in between 0 and 200.  For now, you don't need to worry about how it does that.
 ```
+```swift
+var minValue = 200
 
+for i in arrayOfNumbers where i < minValue {
+minValue = i
+}
+print(minValue)
+
+```
 
 ## Question 10
 
@@ -168,6 +199,11 @@ Iterate through `secondListOfNumbers`, and print out all the odd numbers.
 
 `var secondListOfNumbers = [19,13,14,19,101,10000,141,404]`
 
+```swift
+for i in secondListOfNumbers where i % 2 != 0 {
+print(i)
+}
+```
 
 ## Question 11
 
@@ -175,14 +211,24 @@ Iterate through `thirdListOfNumbers`, and print out the sum.
 
 `var thirdListOfNumbers = [11, 26, 49, 61, 25, 40, 74, 3, 22, 23]`
 
+```swift
+var sum = 0
 
+for i in thirdListOfNumbers {
+sum += i
+}
+print(sum)
+```
 ## Question 12
 
 Iterate through `thirdListOfNumbers`, and print out the sum of all the even numbers.
 
 `var thirdListOfNumbers = [11, 26, 49, 61, 25, 40, 74, 3, 22, 23]`
 
+```swift
 
+
+```
 ## Question 13
 
 Append every Int that appears in both `listOne` and `listTwo` to the `sharedElements` array. Then print **how many Ints** are shared.
@@ -192,7 +238,10 @@ var listOne = [28, 64, 7, 96, 13, 32, 94, 11, 80, 68]
 var listTwo = [18, 94, 48, 6, 42, 68, 79, 76, 13, 7]
 var sharedElements = [Int]()
 ```
+```swift
 
+
+```
 
 ## Question 14
 
