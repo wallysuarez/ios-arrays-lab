@@ -224,8 +224,6 @@ for i in thirdListOfNumbers where i % 2 == 0 {
     sum += i
 }
 print(sum)
-
-
 ```
 ## Question 13
 
@@ -245,8 +243,6 @@ for i in listOne {
     }
 }
 print(sharedElements.count)
-
-
 ```
 
 ## Question 14
@@ -261,7 +257,6 @@ for i in dupeFriendlyList where noDupeList.contains(i) != true {
     noDupeList.append(i)
 }
 print(noDupeList)
-
 ```
 
 ## Question 15
@@ -321,7 +316,6 @@ for i in tripleSumArr {
         }
     }
 }
-
 ```
 ## Question 19
 
@@ -349,7 +343,6 @@ for word in input {
     charCount = 0
 }
 print(aWord)
-
 ```
 
 ## Question 20
@@ -378,9 +371,6 @@ for array in input {
 
 }
 print(bigArray)
-
-
-
 ```
 ## Question 21
 
@@ -391,8 +381,13 @@ Input: `[(4,2), (-3,-3), (1,1), (3,9)]`
 Output: `[(-3,-3), (1,1)]`
 
 ```swift
+let tuple = [(4,2), (-3,-3), (1,1), (3,9)]
+var matchTuple: [(Int, Int)] = []
 
-
+for i in tuple where i.0 == i.1 {
+    matchTuple.append(i)
+}
+print(matchTuple)
 ```
 
 ## Question 22
@@ -404,7 +399,14 @@ Input: `[true, false, true, true]`
 Output: `false`
 
 ```swift
+var input = [true, false, true, true]
+var allAreTrue = true
 
+if input.contains(false) {
+    print(false)
+} else {
+    print(true)
+}
 
 ```
 
